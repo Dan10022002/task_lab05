@@ -31,6 +31,10 @@ vim test1.cpp_
 
 5. Добавляем в файл CMakeLists.txt код для запуска тестов
 
+_cd ..<br/>
+_touch CMakeLists.txt<br/>
+vim CMakeLists.txt_
+
 ![cmake2](https://github.com/Dan10022002/task_lab05/blob/master/cmake2.png)
 
 6. Создадаём файл .travis.yml
