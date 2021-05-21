@@ -1,0 +1,20 @@
+language: cpp
+
+before_install:
+- sudo apt install ruby-coveralls
+
+script:
+- cmake -H. -B_build -DBUILD_TESTS=ON
+- cmake --build _build
+- cmake --build _build --target test -- ARGS=--verbose
+
+addons:
+  apt:
+    sources:
+      - george-edison55-precise-backports
+    packages:
+      - cmake
+      - cmake-data
+
+after_success:
+- coveralls -e ./_build -e ./third-party
