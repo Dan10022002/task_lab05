@@ -39,7 +39,7 @@ vim CMakeLists.txt_
 
 6. Создадаём файл .travis.yml
 
-_touch .trvis.yml<br/>
+_touch .travis.yml<br/>
 vim .travis.yml_
 
 ![travis](https://github.com/Dan10022002/task_lab05/blob/master/travis.png)
